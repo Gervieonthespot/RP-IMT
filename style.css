@@ -3,26 +3,26 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
-.container{
-    display: flex;
-   /* justify-content: center;
-    align-items: center;*/
-    min-height: 98vh;
-    width:100%;
-    background-color: darkgreen;
-}
+
 img{
     height: 100%;
     width: 100%;
-    border-radius: 20px;
+
     /*border: 5px solid #555;*/
 
 }
 .BGImages img{
     border: 5px solid #555;
+    border-radius: 20px;
+   
+    /*center images*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
 }
 body{
-    background-color: darkgreen;
+    background-color: darkslateblue;
 }
 
 .DownloadFile{
@@ -96,10 +96,6 @@ body{
     /*justify-content: center;*/
     align-content: center;
     align-items: center;
-
-
-    
-    
   
 }
 #header .header .Logo{
@@ -229,117 +225,158 @@ body{
 }
 /*Home*/
 
-#Home .Home {
+.Home {
     display: flex;
     flex-direction: column;
-    background-color: yellowgreen;
-    margin-top: 170px;
-
+    /*background-color: yellowgreen;*/
+    margin-top: 170px;  
 }
-#Home .Home .title{
+.Home .title{
+    display: flex;
     background-color: darkorange;
     height: 50px;
     justify-content: center;
     align-items: center;
 
 }
-#Home .Home .title h1 {
+.Home .title h1 {
     text-align: center;
     font-size: 2rem;
 }
 
-#Home .home-item {
+.home-item {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     height: auto;
-    background-color: yellow;
-
+    background-color: rgb(245, 245, 70);
 }
-#Home .home-item2 {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    height: auto; 
-    background-color: yellowgreen;
 
-}
-#Home .home-item .home-left h1{
+.home-item .home-left h1{
     font-size: 2.5rem;
+    text-align: center;
+    color: darkgreen;
 }
-#Home .home-item .home-left{
-     /*background-color: yellow;*/
-     width: 100%;
-     padding: 10px;
-     left: 0%;
+
+.home-item .home-left{
+    display: flex;
+    width:80%;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: red;*/
+    margin-bottom: 10px;
    
 }
 
-#Home .home-item .home-right{
-     /*background-color: orangered;*/
-     width: 100%;
+.home-item .home-right{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: orangered;*/
 
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-  
-     padding: 10px;
- 
 }
-#Home .home-item .home-right .list-col{
+.home-item .home-right .list-col{
+   
     display: flex;
     flex-direction: row;
     width: 100%;
     margin-bottom: 20px;
-    
-    
 
+    justify-content: center;
+    align-content:center;
+   
 }
-#Home .home-item .home-right .list-col .column1{
+.home-item .home-right .list-col .column1{
     /*background-color: blueviolet;*/
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: center;
-    align-items: center;
+    /*align-items: baseline;*/
 }
-#Home .home-item .home-right .list-col .column2{
+.home-item .home-right .list-col .column2{
     /*background-color: blue;*/
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: center;
-    align-items:baseline;
+    /*align-items: baseline;*/
 }
+.home-item .home-right ul{
 
-#Home .home-item .home-right .list-item{
-    
-    padding: 10px;
-
- 
-}
-#Home .home-item .home-right ul{
     list-style: none;
     margin-bottom: 2px;
     padding: 0%;
 }
-#Home .home-item .home-right ul .list-item li a {
-    font-size: 2rem; 
-    text-decoration: none;
+.home-item .home-right .list-item {
+    padding: 5px;
+    border-top: 2px solid green;
+}
+
+.home-item .home-right .list-item .Itemlink li {
+    padding: 4px;
+}
+
+
+.home-item .home-right .list-item li{
+    display: block;
+}
+
+.home-item .home-right ul .list-item li a {
+    font-size: 1.7rem; 
+    text-decoration: none; 
+    font-weight: bold;
 
 }
-#Home .home-item .home-right p{
-    font-size:2.5rem; 
+
+.home-item .home-right .list-item .Itemlink {
+    display: flex;
+    width: 100%;
+    align-items: initial;
+    text-decoration: none; 
+    margin-left: 10px;
+}
+
+.home-item .home-right p{
+    color: rgb(0, 80, 0);
+    font-size:2rem; 
     font-weight: bold;
 }
-#Home .home-item .home-left h1{
-    text-align: center;
-    color: darkgreen;
 
+/*Featured Videos*/
+.Home .title2{
+    display: flex;
+    background-color: rgb(195, 245, 100);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
 }
+
+.Home .title2 h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: darkgreen;
+}
+
+
+/*Quarter Setting*/
+.QuarterSetting {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*justify-content: center;*/
+    align-items:baseline;
+    min-height: 98vh;
+    background-color: darkslateblue;
+
+    /* justify-content: center;
+     align-items: center;*/
+} 
+
 /*First Quarter*/
-#FirstQuarter .FirstQuarter .title{
+
+
+#FirstQuarter .QuarterSetting .title{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -347,56 +384,78 @@ body{
     align-items:baseline;
     color: white;
     font-size: 3rem;
+    background-color: darkgreen;
 }
-#FirstQuarter .FirstQuarter {
+/* Change BackGround*/
+.FirstQuarter-item1 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: auto;
+    background-color: rgb(70, 225, 70);
+}
+.FirstQuarter-item2 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: auto;
+    background-color: lightgreen;
+}
 
-}
 
 
 /*Second Quarter*/
-#SecondQuarter .SecondQuarter .title{
+
+#SecondQuarter .QuarterSetting .title{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
     align-items:baseline;
+    align-content: center;
     color: white;
     font-size: 3rem;
     background-color: red;
 
 }
 /*Third Quarter*/
-#ThirdQuarter .ThirdQuarter .title{
+
+#ThirdQuarter .QuarterSetting .title{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
     align-items:baseline;
+    align-content: center;
     color: white;
     font-size: 3rem;
-    background-color: greenyellow
+    background-color: blue
 }
 /*Fourth Quarter*/
-#FourthQuarter .FourthQuarter .title{
+  
+#FourthQuarter .QuarterSetting .title{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
     align-items:baseline;
+    align-content: center;
     color: white;
     font-size: 3rem;
-    background-color: orangered
+    background-color: yellow
 }
 /*RP-IMT Quarter*/
-#RP-IMT .RP-IMT .title{
+
+#RP-IMT .QuarterSetting .title{
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
     align-items:baseline;
+    align-content: center;
     color: white;
     font-size: 3rem;
-    background-color: lightblue
+    background-color: gray
 }
 
 @media only screen and (max-width: 1270px){
@@ -409,7 +468,6 @@ body{
 
     #header .header .nav-content ul{
         background-color: green;
-
         flex-direction: column;
         width: 100vw;
         height: 100vh;
@@ -419,7 +477,7 @@ body{
        /* padding: 10px;*/
     }
     #header .header .nav-content ul a{
-        line-height:150%;
+        line-height:180%;
         font-size: 3rem;
         width:auto;
       }
@@ -447,7 +505,6 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-   
     }
 
     #Home .home-item {
@@ -461,6 +518,10 @@ body{
         display: flex;
         position: absolute;
         right: 0px;
+    }
+    #Home .home-item .home-right .list-item .Itemlink {
+        display: block;
+        justify-content: center;
     }
 }
 

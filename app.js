@@ -25,10 +25,8 @@ hamburger.addEventListener('click', () => {
 })
 
 menu_item.forEach((item) => {
-
     item.addEventListener('click', () => {
-
-    hamburger.classList.toggle('active');
+    //hamburger.classList.toggle('active');
     mobile_menu.classList.toggle('active');
 
     headerlogo.style.display = 'none';
@@ -48,7 +46,7 @@ menu_item.forEach((item) => {
 
 document.addEventListener("scroll", () => {
     var scroll_position = window.scrollY;
-    if(scroll_position > 100){
+    if(scroll_position > 90){
         headerlogo.style.display = 'none';
         myTitle.style.display = 'none';
         topbar.style.display = 'none';
