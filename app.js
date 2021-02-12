@@ -50,21 +50,28 @@ document.addEventListener("scroll", () => {
     var scroll_position = window.scrollY;
     if(scroll_position > 100){
         headerlogo.style.display = 'none';
-        navcontent.style.display = 'none';
         myTitle.style.display = 'none';
         topbar.style.display = 'none';
+        navcontent.style.display = 'none'
        
         header.style.backgroundColor = 'transparent';
         hamburger.style.display = 'flex';
         hamburger.style.right = '0';
+
     }else{
         headerlogo.style.display = 'flex';
-        navcontent.style.display = 'flex';
+        
         myTitle.style.display = 'flex';
         topbar.style.display = 'flex';
         hamburger.style.display = 'none';
         header.style.backgroundColor = 'darkgreen';
         hamburger.style.right = '0';
-    
+ 
+        if(window.innerWidth < 700){
+            navcontent.style.display = 'none';
+        }else{
+            navcontent.style.display = 'flex';
+        }
+     
     }
 });

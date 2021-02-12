@@ -93,8 +93,12 @@ body{
     height: 120px;
     width: auto;
     background-color: darkgreen;
+    /*justify-content: center;*/
     align-content: center;
     align-items: center;
+
+
+    
     
   
 }
@@ -415,8 +419,9 @@ body{
        /* padding: 10px;*/
     }
     #header .header .nav-content ul a{
-        line-height:200%;
-        font-size: 4rem;
+        line-height:150%;
+        font-size: 3rem;
+        width:auto;
       }
 
     #header .header .hamburger{
@@ -428,11 +433,21 @@ body{
 }
 
 @media only screen and (max-width: 768px){ 
-    #header .header .nav-content {
+
+
+    #header .header{ 
         display: flex;
+        flex-direction: row;
+        /*justify-content: center;*/
+        align-content: center;
+        align-items: center;
+    }
+    #header .header .nav-content {
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+   
     }
 
     #Home .home-item {
