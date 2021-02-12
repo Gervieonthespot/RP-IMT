@@ -1,0 +1,451 @@
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    display: flex;
+   /* justify-content: center;
+    align-items: center;*/
+    min-height: 98vh;
+    width:100%;
+    background-color: darkgreen;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    /*border: 5px solid #555;*/
+
+}
+.BGImages img{
+    border: 5px solid #555;
+}
+body{
+    background-color: darkgreen;
+}
+
+.DownloadFile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: 12px;;
+    border: 4px solid green;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+/*Header*/
+#header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+
+}
+
+#header .top-bar { 
+    background-color: darkolivegreen;
+    height: 50px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#header .top-bar ul{ 
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    list-style: none;
+    padding: 0px;    
+    color: cornsilk;
+}
+#header .top-bar ul li{ 
+    padding: 30px;
+    font-size: 2rem;
+ 
+}
+
+#header .header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 120px;
+    width: auto;
+    background-color: darkgreen;
+    align-content: center;
+    align-items: center;
+    
+  
+}
+#header .header .Logo{
+    width: 100px;
+    padding: 20px;
+    
+}
+
+#header .header .title {
+    /*background-color: blue;*/
+}
+#header .header .title h1{
+    font-size: 3rem;
+    color: whitesmoke;  
+    text-align: center;
+}
+
+#header .header .nav-content{
+    position:absolute;
+    right: 20px;
+    display: flex;
+
+      /*background-color: yellow;*/
+   
+}
+
+/*for JS Active*/
+#header .header .nav-content.active{
+    display: none;
+}
+
+#header .header .nav-content ul{ 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0%;
+    right:0;
+    color: cornsilk;
+}
+
+#header .header .nav-content ul a{
+    font-size: 2.2rem;;
+    font-weight:bold;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+      
+}
+
+#header .header .nav-content ul a::before {
+    /*content: attr(data-after);*/
+}
+
+/*create burger*/
+#header .hamburger {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:100;
+    cursor: pointer;
+    transform: scale(.8);
+    margin-right: 20px;
+    right: 0px;
+}
+
+/*create burger bar*/
+#header .hamburger .bar {
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+} 
+
+#header .hamburger .bar::after,
+#header .hamburger .bar::before { 
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+  
+    background-color: white;
+    transition:  .3s ease;
+    transition-property: top, bottom;
+}
+
+/*for JS Active*/
+#header .hamburger .bar::after{ 
+    top:8px
+}
+#header .hamburger .bar::before{ 
+    bottom:8px
+}
+
+
+#header .hamburger.active .bar::before{ 
+    bottom:0;
+}
+#header .hamburger.active .bar::after{ 
+    top:0;
+}
+
+
+/*for animation*/
+#header .hamburger:after{ 
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    animation: hamburger_puls 1s ease infinite;
+
+}
+
+#header .hamburger{
+    display: none;
+    right: 0;
+}
+/*Home*/
+
+#Home .Home {
+    display: flex;
+    flex-direction: column;
+    background-color: yellowgreen;
+    margin-top: 170px;
+
+}
+#Home .Home .title{
+    background-color: darkorange;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+#Home .Home .title h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#Home .home-item {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: auto;
+    background-color: yellow;
+
+}
+#Home .home-item2 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: auto; 
+    background-color: yellowgreen;
+
+}
+#Home .home-item .home-left h1{
+    font-size: 2.5rem;
+}
+#Home .home-item .home-left{
+     /*background-color: yellow;*/
+     width: 100%;
+     padding: 10px;
+     left: 0%;
+   
+}
+
+#Home .home-item .home-right{
+     /*background-color: orangered;*/
+     width: 100%;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  
+     padding: 10px;
+ 
+}
+#Home .home-item .home-right .list-col{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    
+
+}
+#Home .home-item .home-right .list-col .column1{
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#Home .home-item .home-right .list-col .column2{
+    /*background-color: blue;*/
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items:baseline;
+}
+
+#Home .home-item .home-right .list-item{
+    
+    padding: 10px;
+
+ 
+}
+#Home .home-item .home-right ul{
+    list-style: none;
+    margin-bottom: 2px;
+    padding: 0%;
+}
+#Home .home-item .home-right ul .list-item li a {
+    font-size: 2rem; 
+    text-decoration: none;
+
+}
+#Home .home-item .home-right p{
+    font-size:2.5rem; 
+    font-weight: bold;
+}
+#Home .home-item .home-left h1{
+    text-align: center;
+    color: darkgreen;
+
+}
+/*First Quarter*/
+#FirstQuarter .FirstQuarter .title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items:baseline;
+    color: white;
+    font-size: 3rem;
+}
+#FirstQuarter .FirstQuarter {
+
+}
+
+
+/*Second Quarter*/
+#SecondQuarter .SecondQuarter .title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items:baseline;
+    color: white;
+    font-size: 3rem;
+    background-color: red;
+
+}
+/*Third Quarter*/
+#ThirdQuarter .ThirdQuarter .title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items:baseline;
+    color: white;
+    font-size: 3rem;
+    background-color: greenyellow
+}
+/*Fourth Quarter*/
+#FourthQuarter .FourthQuarter .title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items:baseline;
+    color: white;
+    font-size: 3rem;
+    background-color: orangered
+}
+/*RP-IMT Quarter*/
+#RP-IMT .RP-IMT .title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items:baseline;
+    color: white;
+    font-size: 3rem;
+    background-color: lightblue
+}
+
+@media only screen and (max-width: 1270px){
+
+   
+    #header .header .nav-content{
+        top: 0%;
+        display: none;
+    }
+
+    #header .header .nav-content ul{
+        background-color: green;
+
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        
+       /* padding: 10px;*/
+    }
+    #header .header .nav-content ul a{
+        line-height:200%;
+        font-size: 4rem;
+      }
+
+    #header .header .hamburger{
+        display: flex;
+        position: absolute;
+        right: 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px){ 
+    #header .header .nav-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Home .home-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+    }
+    #header .header .hamburger{
+        display: flex;
+        position: absolute;
+        right: 0px;
+    }
+}
+
