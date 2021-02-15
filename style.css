@@ -241,8 +241,11 @@ body{
 }
 .Home .title h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
+    color: ivory;
 }
+
+
 
 .home-item {
     display: flex;
@@ -253,19 +256,28 @@ body{
 }
 
 .home-item .home-left h1{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    text-align: center;
+    color: darkgreen;
+}
+.home-item .home-left h3 {
+    font-size: 2.3rem;
     text-align: center;
     color: darkgreen;
 }
 
 .home-item .home-left{
     display: flex;
-    width:80%;
+    width:60%;
     flex-direction: column;
     align-items: center;
     /*background-color: red;*/
     margin-bottom: 10px;
+    
    
+}
+.home-item .home-left .BGImages { 
+    width: 90%;
 }
 
 .home-item .home-right{
@@ -274,6 +286,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
     /*background-color: orangered;*/
 
 }
@@ -307,26 +320,52 @@ body{
     list-style: none;
     margin-bottom: 2px;
     padding: 0%;
+
+    
+    
 }
 .home-item .home-right .list-item {
-    padding: 5px;
-    border-top: 2px solid green;
+    padding: 2px;
+    margin-bottom: 15px;
+    /*border-top: 2px solid green;
+    background-color: red;*/
+
+
+    
 }
+.home-item .home-right .Itemlink{
+    /*display: flex;
+    flex-direction:initial;
+
+    justify-content: center;
+    align-content:center*/
+    width: inherit;
+     
+}
+
+
 
 .home-item .home-right .list-item .Itemlink li {
-    padding: 4px;
+   /* padding: 3px;*/
+   left: 0;
 }
 
 
-.home-item .home-right .list-item li{
-    display: block;
+.home-item .home-right .list-item li {
+
+    /*display: block;*/
+    padding: 2px;
 }
 
-.home-item .home-right ul .list-item li a {
-    font-size: 1.7rem; 
+.home-item .home-right a {
+    font-size: 2rem; 
     text-decoration: none; 
     font-weight: bold;
-
+}
+/*Mouse over*/
+.home-item .home-right ul .Itemlink a:hover{
+    /*color: yellow;*/
+    background-color: greenyellow;
 }
 
 .home-item .home-right .list-item .Itemlink {
@@ -344,6 +383,43 @@ body{
 }
 
 /*Featured Videos*/
+
+.home-videos {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    height: auto;
+    background-color: rgb(245, 245, 70);
+}
+
+.home-videos .home-left{
+    display: flex;
+    width:65%;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: red;*/
+    margin-bottom: 10px;
+    width: 80%;
+    
+}
+
+
+.home-videos .home-left .BGImages {
+    width: 90%;
+}
+
+
+.home-videos .home-left h1 {
+    
+    font-size: 2.3rem;
+    text-align: center;
+    color: darkgreen;
+    width: 100%;
+    height:100%;
+    
+
+}
+
 .Home .title2{
     display: flex;
     background-color: rgb(195, 245, 100);
@@ -372,6 +448,13 @@ body{
     /* justify-content: center;
      align-items: center;*/
 } 
+.FirstQuarter-itemHide {
+    display: none;
+    flex-direction: row;
+    align-items: baseline;
+    height: auto;
+    background-color: rgb(70, 225, 70);
+}
 
 /*First Quarter*/
 
@@ -481,6 +564,10 @@ body{
         font-size: 3rem;
         width:auto;
       }
+    .home-item .home-right .list-item .Itemlink {
+        display: flex;
+        flex-direction: column;
+    }
 
     #header .header .hamburger{
         display: flex;
@@ -507,21 +594,33 @@ body{
         align-items: center;
     }
 
-    #Home .home-item {
+    .home-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
   
     }
+    
+    .home-item .home-left{
+        width: 80%;
+
+    }
     #header .header .hamburger{
         display: flex;
         position: absolute;
         right: 0px;
     }
-    #Home .home-item .home-right .list-item .Itemlink {
+    .home-item .home-right .list-item .Itemlink {
         display: block;
         justify-content: center;
     }
+
+    #Home .home-videos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
 }
 
