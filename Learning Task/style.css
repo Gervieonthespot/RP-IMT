@@ -1,0 +1,348 @@
+body{
+    margin: 0%;
+    font-family: Tahoma;
+    overflow-x: hidden;
+    background-color: thistle;
+
+}
+.Start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    width: 100%;
+    height:100vh;
+    left: 0%;
+
+
+    font-size: 3rem;
+    font-family: Verdana;
+    font-weight: bold;
+    color: greenyellow;
+    background-color: green;
+    z-index: 100;
+
+    margin: 0%;
+    padding: 0%;
+
+    transition: left  2s ease;
+    
+    
+    
+}
+.Start.active{
+    left: 100%;
+}
+.Start-top{
+    text-align: center;
+}
+
+.ShowResult{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    width: 100%;
+    height:78vh;
+    left: 100%;
+    top: 175px;
+
+    background-color:lightgreen;
+    z-index: 100;
+
+    margin: 0%;
+    padding: 0%;
+
+    transition: left  2s ease;
+    
+}
+.ShowResult.active{
+    left: 0%;
+}
+
+.ShowResult .Title{
+    font-size: 3rem;
+    color: darkgreen;
+    font-weight: bold;
+    
+}
+
+.ShowResult .YourScore{
+    font-size: 2rem;
+    color: darkgreen;
+    margin-top: 20px;
+}
+.ShowResult .Score{
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+}
+.ShowResult .submit p{
+    display: flex;
+   
+    margin: 0%;
+    padding: 0%;
+ }
+
+
+.ShowResult .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    font-size: 1.5rem;
+    text-align: center;
+    color: green;
+    
+    margin: 25px;
+    padding: 0%;
+}
+
+.ShowResult .submit a .response{
+    display: flex;
+    justify-content: center;
+
+    background-color: Green;
+    color:greenyellow;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 140px;
+
+
+
+
+}
+.ShowResult .submit a {
+    text-decoration: none;
+}
+
+
+
+
+/*content */
+.Content{
+    display: flex;
+    flex-direction: column;
+    
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: none;
+
+    margin: 0%;
+    padding: 0%;
+}
+
+.Content .top-bar{
+    display: flex;
+
+
+    position: relative;
+    width: 100vw;
+    height: 50px;
+    background-color: olivedrab;
+}
+
+.Content .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    height: 120px;
+
+    color: white;
+    background-color: darkgreen;
+}
+.Content .header .title h1{
+    text-align: center;
+}
+
+.Content .header .Logo img{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+}
+
+/*Question*/
+
+
+.Question{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+
+    margin: 0%;
+    padding: 0%;
+
+
+    color: white;
+    background-color: rgb(5, 140, 5)
+
+}
+
+.QuestionCount{
+    position: relative;
+    width: 96%;
+    text-align: center;
+    padding: 0%;
+    font-size: 1.5rem;
+    margin-top: 25px;
+ 
+    color: yellow;
+    background-color: none;
+
+}
+.Question .Question-Content{
+    position: relative;
+    width: 96%;
+    text-align: center;
+  
+
+}
+.Question .Question-Content p{
+    text-align: center;
+    margin: 20px;
+    margin-top: 25px;
+    background-color: green;
+
+    border: green;
+    border-top: rgb(70, 250, 70);
+    border-style: solid;
+    border-width: 2px;
+ 
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+
+.Option-List {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+
+    position: relative;;
+    height: auto;
+}
+.Option-List p{
+    width: 100%;
+
+}
+
+.myOption1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 75px;
+    width: 100%;;
+    font-size: 1.5rem;
+    padding: 4px;
+    text-align: center;
+
+
+    color: darkgreen;
+    background-color: rgb(70, 250, 70)  
+
+}
+
+
+.myOption2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 75px;
+    width: 100%;;
+    font-size: 1.5rem;
+    padding: 4px;
+    text-align: center;
+
+
+    color: darkgreen;
+    background-color: rgb(150, 250, 150)
+   
+
+}
+
+
+.myOption3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 75px;
+    width: 100%;;
+    font-size: 1.5rem;
+     padding: 4px;
+    text-align: center;
+
+
+    color: darkgreen;
+    background-color:rgb(70, 250, 70)
+
+}
+
+
+.myOption4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 75px;
+    width: 100%;;
+    font-size: 1.5rem;
+    padding: 4px;
+    text-align: center;
+
+    color: darkgreen;
+    background-color: rgb(150, 250, 150)
+   
+
+}
+
+.NextQuestion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 75px;
+    width: auto;
+    font-size: 1.5rem;
+    padding: 4px;
+    text-align: center;
+
+    color: white;
+    background-color: rgb(5, 140, 5)
+
+}
+
+/* Show Result*/
