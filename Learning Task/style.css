@@ -13,7 +13,7 @@ body{
     
     position: absolute;
     width: 100%;
-    height:100vh;
+    height:104vh;
     left: 0%;
 
 
@@ -326,23 +326,32 @@ body{
    
 
 }
+.nQuestion{
+    position: relative;
+    height: 75px;
+    width: 100%;;
+
+}
 
 .NextQuestion{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
     position: relative;
-    height: 75px;
-    width: auto;
+    height: 100%;
+    width: 100%;;
     font-size: 1.5rem;
-    padding: 4px;
+     padding: 4px;
     text-align: center;
+
 
     color: white;
     background-color: rgb(5, 140, 5)
 
 }
+
+
 
 /* Show Result*/
