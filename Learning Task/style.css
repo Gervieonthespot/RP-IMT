@@ -33,14 +33,14 @@ body{
     
 }
 .Start.active{
-    left: 100%;
+    display: none;
 }
 .Start-top{
     text-align: center;
 }
 
 .ShowResult{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ body{
     position: absolute;
     width: 100%;
     height:78vh;
-    left: 100%;
+    left: 0%;
     top: 175px;
 
     background-color:lightgreen;
@@ -61,7 +61,7 @@ body{
     
 }
 .ShowResult.active{
-    left: 0%;
+    display: flex;
 }
 
 .ShowResult .Title{
