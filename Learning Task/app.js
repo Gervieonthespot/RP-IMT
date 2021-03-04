@@ -118,7 +118,7 @@ function callOption(e) {
 /* next Question */
 /*Next Question */
 
-const NextQuestion = document.querySelector('.NextQuestion');
+const NextQuestion = document.querySelector('.Content .NextQuestion');
 const Result = document.querySelector('.ShowResult');
 NextQuestion.addEventListener('click', (e) => {
 
@@ -137,6 +137,11 @@ NextQuestion.addEventListener('click', (e) => {
 
       document.getElementById("ShowResultTitle").innerHTML = document.getElementById("myTitle").innerHTML;
       document.getElementById("myScore").innerHTML = countScore + " / " + (QuestionArray.length - 1);
+
+      for (var i = 1; i <= 4; i++) {
+        document.getElementById("Option" + i).innerHTML = " ";
+      }
+      
     }
 
   }
