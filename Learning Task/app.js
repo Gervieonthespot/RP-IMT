@@ -132,15 +132,18 @@ NextQuestion.addEventListener('click', (e) => {
 
   } else {
     if (e.target.innerText == "Show Result") {
-      console.log("working")
+      //console.log("working")
+      for (var i = 1; i <= 4; i++) {
+        document.getElementById("Option" + i).innerHTML = " ";
+      }
+      document.getElementById("myQuestion").innerHTML = "";
+
       Result.classList.toggle('active');
 
       document.getElementById("ShowResultTitle").innerHTML = document.getElementById("myTitle").innerHTML;
       document.getElementById("myScore").innerHTML = countScore + " / " + (QuestionArray.length - 1);
 
-      for (var i = 1; i <= 4; i++) {
-        document.getElementById("Option" + i).innerHTML = " ";
-      }
+    
       
     }
 
