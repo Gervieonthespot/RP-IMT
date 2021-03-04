@@ -136,7 +136,7 @@ NextQuestion.addEventListener('click', (e) => {
       for (var i = 1; i <= 4; i++) {
         document.getElementById("Option" + i).innerHTML = " ";
       }
-      document.getElementById("myQuestion").innerHTML = "";
+      document.getElementById("myQuestion").innerHTML = " ";
 
       Result.classList.toggle('active');
 
