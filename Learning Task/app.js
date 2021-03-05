@@ -93,7 +93,7 @@ function callOption(e) {
   console.log(QuestionArray[count][1]);
 
   if ((e.target.innerText) == QuestionArray[shuffleQuestion[count - 1]][1]) {
-    document.getElementById(e.target.id).style.background = "lime";
+    document.getElementById(e.target.id).style.background = "lightyellow";
     document.getElementById(e.target.id).style.color = "darkgreen";
     document.getElementById(e.target.id).style.fontWeight = "bold";
     document.getElementById("NextQuestion").innerHTML = "Next Question";
