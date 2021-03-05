@@ -42,7 +42,7 @@ body{
 .ShowResult{
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content:first baseline;
     align-items: center;
     
     position: absolute;
@@ -69,6 +69,7 @@ body{
     color: darkgreen;
     font-weight: bold;
     text-align: center;
+    margin-top: 25px;
     
 }
 
